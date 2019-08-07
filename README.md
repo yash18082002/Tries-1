@@ -46,7 +46,7 @@ The length of words will be in the range [1, 1000].
 The length of words[i] will be in the range [1, 30].
 
 ## Problem3
-Longest Palindrome
+Longest Palindrome (https://leetcode.com/problems/longest-palindrome/)
 Easy
 
 572
