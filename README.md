@@ -46,22 +46,24 @@ The length of words will be in the range [1, 1000].
 The length of words[i] will be in the range [1, 30].
 
 ## Problem3
-Longest Palindrome (https://leetcode.com/problems/longest-palindrome/)
+Replace Words (https://leetcode.com/problems/replace-words/)
+In English, we have a concept called root, which can be followed by some other words to form another longer word - let's call this word successor. For example, the root an, followed by other, which can form another word another.
 
-Given a string which consists of lowercase or uppercase letters, find the length of the longest palindromes that can be built with those letters.
+Now, given a dictionary consisting of many roots and a sentence. You need to replace all the successor in the sentence with the root forming it. If a successor has many roots can form it, replace it with the root with the shortest length.
 
-This is case sensitive, for example "Aa" is not considered a palindrome here.
+You need to output the sentence after the replacement.
+
+Example 1:
+
+Input: dict = ["cat", "bat", "rat"]
+sentence = "the cattle was rattled by the battery"
+Output: "the cat was rat by the bat"
+ 
 
 Note:
-Assume the length of given string will not exceed 1,010.
 
-Example:
-
-Input:
-"abccccdd"
-
-Output:
-7
-
-Explanation:
-One longest palindrome that can be built is "dccaccd", whose length is 7.
+The input will only have lower-case letters.
+1 <= dict words number <= 1000
+1 <= sentence words number <= 1000
+1 <= root length <= 100
+1 <= sentence words length <= 1000
